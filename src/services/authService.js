@@ -3,11 +3,20 @@ import { toast } from "react-toastify";
 
 export const BACKEND_URL = process.env.REACT_APP_BACKEND_URL
 
+export const validateEmail = (email) => {
+    return email.match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+}
+
 export const registerUser = async (userData) => {
     try {
-        const response = await axios.post(`${BACKEND_URL}/api/users/register`, userData, { withCredentials: true })
+        const response = await axios.post(`${BACKEND_URL}/api/users/register`,
+            userData,
+            { withCredentials: true }
+        );
         if (response.statusText === "OK") {
-            toast.success("Registered successfully")
+            toast.success("User Registered successfully")
         }
         return response.data
     } catch (error) {
