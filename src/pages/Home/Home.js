@@ -1,5 +1,5 @@
 import React from "react";
-import { RiProductHuntLine } from "react-icons/ri";
+import { FaAutoprefixer } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import heroImg from "../../assets/inv-img.png";
@@ -10,8 +10,9 @@ const Home = () => {
         <div className="home">
             <nav className="container --flex-between ">
                 <div className="logo">
-                    <RiProductHuntLine size={35} />
+                    <FaAutoprefixer size={35} />
                 </div>
+                <div className="title">WareMaster</div>
 
                 <ul className="home-links">
                     <ShowOnLogout>

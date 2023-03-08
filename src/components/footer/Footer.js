@@ -3,7 +3,8 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className='--flex-center --py2'>
-            <p>ALL Rights Reserved. &copy; 2023</p>
+
+            <p> ------WareMaster------ <br></br>All Rights Reserved. &copy; 2023</p>
         </div>
     )
 }
