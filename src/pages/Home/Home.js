@@ -49,11 +49,11 @@ const Home = () => {
                             <Link to="/dashboard">Free Trial 1 Month</Link>
                         </button>
                     </div>
-                    <div className="--flex-start">
+                    {/* <div className="--flex-start">
                         <NumberText num="14K" text="Brand Owners" />
                         <NumberText num="23K" text="Active Users" />
                         <NumberText num="500+" text="Partners" />
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="hero-image">
